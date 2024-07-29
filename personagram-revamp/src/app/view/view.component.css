@@ -1,0 +1,19 @@
+.component-container{
+  width:900px;
+}
+.img-view-container{
+  display:flex;
+  flex-direction: row;
+  border:1px solid black;
+}
+.img-view-container .img-view{
+  width:70%;
+}
+.img-view-container .img-view img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.img-view-container .img-desc{
+  width:30%;
+}

@@ -1,0 +1,9 @@
+<div id="homeDiv" class="component-container">
+	<div class="img-container">
+		@for (item of images; track item.id){
+			<div class="img-box">
+				<a routerLink="../view/{{ item.id }}" routerLinkActive="active" ariaCurrentWhenActive="page"><img [src]="item.image.url" alt=""></a>
+			</div>
+		}
+	</div>
+</div>
