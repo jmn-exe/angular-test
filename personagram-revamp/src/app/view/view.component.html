@@ -6,6 +6,16 @@
 		<div class="img-view">
 			<img src="{{post.image.url}}" alt="">
 		</div>
-		<div class="img-desc">{{ post.note }}</div>
+		<div class="img-desc">
+			<div class="img-tag">@for (tag of post.tag; track tag){
+				<span class="tag tag-{{tag.toLowerCase()}}">{{tag}}</span>
+				}
+			</div>
+			<div class="img-date">
+				{{ post.datemodified }}
+			</div>
+			<div class="img-note">{{ post.note }}</div>
+
+		</div>
 	</div>
 </div>

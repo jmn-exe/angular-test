@@ -17,3 +17,33 @@
 .img-view-container .img-desc{
   width:30%;
 }
+
+.img-desc div{
+  padding:10px 5px;
+}
+
+.img-desc .tag{
+  padding:5px;
+  border-radius:3px;
+  color:white;
+}
+.img-desc .img-tag{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.img-desc .tag-diary{
+  background-color:purple;
+}
+.img-desc .tag-fun{
+  background-color:rgb(128, 51, 0);
+}
+.img-desc .tag-journal{
+  background-color:rgb(5, 105, 1);
+}
+
+.img-desc .img-date{
+  font-size:12px;
+  color:grey;
+}

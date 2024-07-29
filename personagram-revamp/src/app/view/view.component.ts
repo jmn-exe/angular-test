@@ -24,6 +24,7 @@ export class ViewComponent implements OnInit{
   private getPost(){
     this.http.get("http://localhost:5000/post/"+this.id).subscribe( (res:any) =>{
       res.image.url = 'http://localhost:5000' + res.image.url;
+      res.datemodified = new Date(res.datemodified).toDateString();
       this.post = res;
     })
   }
